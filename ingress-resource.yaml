@@ -11,5 +11,5 @@ spec:
       paths:
       - path: /
         backend:
-          serviceName: app1
+          serviceName: kuard
           servicePort: 80
