@@ -1,13 +1,15 @@
 kind: Service
 apiVersion: v1
 metadata:
+  labels:
+    run: kuard
   name: kuard
 spec:
   ports:
   - port: 80
     targetPort: 8080
   selector:
-    app: kuard
+    run: kuard
 ---
 apiVersion: extensions/v1beta1
 kind: Deployment
